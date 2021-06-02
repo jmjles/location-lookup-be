@@ -9,7 +9,14 @@ const port = process.env.PORT;
 
 const middleware = [
   express.json(),
-  cors({ origin: "https://location-lookup.jesusmj.com/" }),
+  cors({
+    origin: [
+      "https://location-lookup.jesusmj.com/",
+      "http://location-lookup.jesusmj.com/",
+      "http://jesusmj.com/",
+      "https://jesusmj.com/",
+    ],
+  }),
 ];
 
 app.use(middleware);
