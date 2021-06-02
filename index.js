@@ -20,7 +20,7 @@ const middleware = [
   }),
 ];
 
-app.use(middleware);
+app.use(...middleware);
 app.use("/api", KeyRoute);
 
 app.listen(port, () => console.log(`\nServer is running on port:${port}`));
