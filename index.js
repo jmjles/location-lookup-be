@@ -10,6 +10,7 @@ const port = process.env.PORT;
 const middleware = [
   express.json(),
   cors({
+    credentials: true,
     origin: [
       "https://location-lookup.jesusmj.com/",
       "http://location-lookup.jesusmj.com/",
