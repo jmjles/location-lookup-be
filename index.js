@@ -7,7 +7,10 @@ require('dotenv').config()
 
 const port = process.env.PORT
 
-const middleware = [express.json(),cors()]
+const middleware = [
+  express.json(),
+  cors({ origin: ["https://location-lookup.jesusmj.com/"] }),
+];
 
 app.use(middleware)
 app.use('/api',KeyRoute)
