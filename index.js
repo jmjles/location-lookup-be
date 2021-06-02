@@ -1,18 +1,18 @@
-const express = require('express')
-const app = express()
-const KeyRoute = require('./routes/keys')
-const cors = require('cors')
+const express = require("express");
+const app = express();
+const KeyRoute = require("./routes/keys");
+const cors = require("cors");
 
-require('dotenv').config()
+require("dotenv").config();
 
-const port = process.env.PORT
+const port = process.env.PORT;
 
 const middleware = [
   express.json(),
-  cors({ origin: ["https://location-lookup.jesusmj.com/"] }),
+  cors({ origin: "https://location-lookup.jesusmj.com/" }),
 ];
 
-app.use(middleware)
-app.use('/api',KeyRoute)
+app.use(middleware);
+app.use("/api", KeyRoute);
 
-app.listen(port,()=> console.log(`\nServer is running on port:${port}`))
+app.listen(port, () => console.log(`\nServer is running on port:${port}`));
