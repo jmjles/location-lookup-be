@@ -16,6 +16,10 @@ const middleware = [
       "http://location-lookup.jesusmj.com/",
       "http://jesusmj.com/",
       "https://jesusmj.com/",
+      "https://\*.jesusmj.com/",
+      "https://\*.jesusmj.com/",
+      "http://localhost:3000",
+      "https://localhost:3000",
     ],
   }),
 ];
