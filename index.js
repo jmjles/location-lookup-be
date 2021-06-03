@@ -11,16 +11,6 @@ const middleware = [
   express.json(),
   cors({
     credentials: true,
-    origin: [
-      "https://location-lookup.jesusmj.com/",
-      "http://location-lookup.jesusmj.com/",
-      "http://jesusmj.com/",
-      "https://jesusmj.com/",
-      "https://\*.jesusmj.com/",
-      "https://\*.jesusmj.com/",
-      "http://localhost:3000",
-      "https://localhost:3000",
-    ],
   }),
 ];
 
